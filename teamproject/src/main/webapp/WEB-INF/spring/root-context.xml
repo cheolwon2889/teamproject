@@ -73,7 +73,7 @@
 	
 	<!-- SqlSession (SqlSessionTemplate) : connection생성( + 연결정보) , SQL 쿼리 실행  , Mybatis , 자원해제(자동) -->
 	
-	<context:property-placeholder location="classpath:/db-config/email.properties" />
+	
 
   
 

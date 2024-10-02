@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,12 +11,12 @@
     />
     <link
       rel="icon"
-      href="../../resources/img/kaiadmin/favicon.ico"
+      href="./resources/img/kaiadmin/favicon.ico"
       type="image/x-icon"
     />
 
     <!-- Fonts and icons -->
-    <script src="../../resources/js/plugin/webfont/webfont.min.js"></script>
+    <script src="./resources/js/plugin/webfont/webfont.min.js"></script>
     <script>
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
@@ -27,7 +27,7 @@
             "Font Awesome 5 Brands",
             "simple-line-icons",
           ],
-          urls: ["../../resources/css/fonts.min.css"],
+          urls: ["./resources/css/fonts.min.css"],
         },
         active: function () {
           sessionStorage.fonts = true;
@@ -36,12 +36,12 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="../../resources/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../resources/css/plugins.min.css" />
-    <link rel="stylesheet" href="../../resources/css/kaiadmin.min.css" />
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./resources/css/plugins.min.css" />
+    <link rel="stylesheet" href="./resources/css/kaiadmin.min.css" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="../../resources/css/demo.css" />
+    <link rel="stylesheet" href="./resources/css/demo.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -52,7 +52,7 @@
           <div class="logo-header" data-background-color="dark">
             <a href="index.html" class="logo">
               <img
-                src="../../resources/img/kaiadmin/logo_light.svg"
+                src="./resources/img/kaiadmin/logo_light.svg"
                 alt="navbar brand"
                 class="navbar-brand"
                 height="20"
@@ -266,7 +266,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="./documentation/index.html">
                   <i class="fas fa-file"></i>
                   <p>Documentation</p>
                   <span class="badge badge-secondary">1</span>
@@ -336,7 +336,7 @@
             <div class="logo-header" data-background-color="dark">
               <a href="index.html" class="logo">
                 <img
-                  src="../../resources/img/kaiadmin/logo_light.svg"
+                  src="./resources/img/kaiadmin/logo_light.svg"
                   alt="navbar brand"
                   class="navbar-brand"
                   height="20"
@@ -434,7 +434,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="../../resources/img/jm_denis.jpg"
+                                src="./resources/img/jm_denis.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -447,7 +447,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="../../resources/img/chadengle.jpg"
+                                src="./resources/img/chadengle.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -460,7 +460,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="../../resources/img/mlane.jpg"
+                                src="./resources/img/mlane.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -475,7 +475,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="../../resources/img/talha.jpg"
+                                src="./resources/img/talha.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -543,7 +543,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="../../resources/img/profile2.jpg"
+                                src="./resources/img/profile2.jpg"
                                 alt="Img Profile"
                               />
                             </div>
@@ -661,7 +661,7 @@
                   >
                     <div class="avatar-sm">
                       <img
-                        src="../../resources/img/profile.jpg"
+                        src="./resources/img/profile.jpg"
                         alt="..."
                         class="avatar-img rounded-circle"
                       />
@@ -677,7 +677,7 @@
                         <div class="user-box">
                           <div class="avatar-lg">
                             <img
-                              src="../../resources/img/profile.jpg"
+                              src="./resources/img/profile.jpg"
                               alt="image profile"
                               class="avatar-img rounded"
                             />
@@ -965,7 +965,7 @@
 								<div class="card-body pb-0">
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="../../resources/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="./resources/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ms-2">
 											<h6 class="fw-bold mb-1">CSS</h6>
@@ -978,7 +978,7 @@
 									<div class="separator-dashed"></div>
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="../../resources/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="./resources/img/logoproduct.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ms-2">
 											<h6 class="fw-bold mb-1">J.CO Donuts</h6>
@@ -991,7 +991,7 @@
 									<div class="separator-dashed"></div>
 									<div class="d-flex">
 										<div class="avatar">
-											<img src="../../resources/img/logoproduct3.svg" alt="..." class="avatar-img rounded-circle">
+											<img src="./resources/img/logoproduct3.svg" alt="..." class="avatar-img rounded-circle">
 										</div>
 										<div class="flex-1 pt-1 ms-2">
 											<h6 class="fw-bold mb-1">Ready Pro</h6>
@@ -1015,7 +1015,7 @@
 									<div class="card-list">
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">Jimmy Denis</div>
@@ -1027,7 +1027,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">Chad</div>
@@ -1039,7 +1039,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">Talha</div>
@@ -1051,7 +1051,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/mlane.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">John Doe</div>
@@ -1063,7 +1063,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/talha.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">Talha</div>
@@ -1075,7 +1075,7 @@
 										</div>
 										<div class="item-list">
 											<div class="avatar">
-												<img src="../../resources/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
+												<img src="./resources/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle">
 											</div>
 											<div class="info-user ms-3">
 												<div class="username">Jimmy Denis</div>
@@ -1208,7 +1208,7 @@
                     <div class="d-flex">
                       <div class="avatar">
                         <img
-                          src="../../resources/img/logoproduct.svg"
+                          src="./resources/img/logoproduct.svg"
                           alt="..."
                           class="avatar-img rounded-circle"
                         />
@@ -1225,7 +1225,7 @@
                     <div class="d-flex">
                       <div class="avatar">
                         <img
-                          src="../../resources/img/logoproduct.svg"
+                          src="./resources/img/logoproduct.svg"
                           alt="..."
                           class="avatar-img rounded-circle"
                         />
@@ -1242,7 +1242,7 @@
                     <div class="d-flex">
                       <div class="avatar">
                         <img
-                          src="../../resources/img/logoproduct3.svg"
+                          src="./resources/img/logoproduct3.svg"
                           alt="..."
                           class="avatar-img rounded-circle"
                         />
@@ -1303,7 +1303,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/id.png"
+                                      src="./resources/img/flags/id.png"
                                       alt="indonesia"
                                     />
                                   </div>
@@ -1316,7 +1316,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/us.png"
+                                      src="./resources/img/flags/us.png"
                                       alt="united states"
                                     />
                                   </div>
@@ -1329,7 +1329,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/au.png"
+                                      src="./resources/img/flags/au.png"
                                       alt="australia"
                                     />
                                   </div>
@@ -1342,7 +1342,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/ru.png"
+                                      src="./resources/img/flags/ru.png"
                                       alt="russia"
                                     />
                                   </div>
@@ -1355,7 +1355,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/cn.png"
+                                      src="./resources/img/flags/cn.png"
                                       alt="china"
                                     />
                                   </div>
@@ -1368,7 +1368,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="../../resources/img/flags/br.png"
+                                      src="./resources/img/flags/br.png"
                                       alt="brazil"
                                     />
                                   </div>
@@ -1864,41 +1864,44 @@
       <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
-<script src="../../../resources/js/core/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="./resources/js/core/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="../../resources/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="./resources/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
     <!-- Chart JS -->
-    <script src="../../resources/js/plugin/chart.js/chart.min.js"></script>
+    <script src="./resources/js/plugin/chart.js/chart.min.js"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="../../resources/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="./resources/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
 
     <!-- Chart Circle -->
-    <script src="../../resources/js/plugin/chart-circle/circles.min.js"></script>
+    <script src="./resources/js/plugin/chart-circle/circles.min.js"></script>
 
     <!-- Datatables -->
-    <script src="../../resources/js/plugin/datatables/datatables.min.js"></script>
+    <script src="./resources/js/plugin/datatables/datatables.min.js"></script>
 
     <!-- Bootstrap Notify -->
-    <script src="../../resources/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="./resources/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
     <!-- jQuery Vector Maps -->
-    <script src="../../resources/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-    <script src="../../resources/js/plugin/jsvectormap/world.js"></script>
+    <script src="./resources/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="./resources/js/plugin/jsvectormap/world.js"></script>
 
     <!-- Sweet Alert -->
-    <script src="../../resources/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <script src="./resources/js/plugin/sweetalert/sweetalert.min.js"></script>
 
     <!-- Kaiadmin JS -->
-    <script src="../../resources/js/kaiadmin.min.js"></script>
+    <script src="./resources/js/kaiadmin.min.js"></script>
 
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="../../resources/js/setting-demo.js"></script>
-    <script src="../../resources/js/demo.js"></script>
+    <script src="./resources/js/setting-demo.js"></script>
+    <script src="./resources/js/demo.js"></script>
     <script>
       $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
         type: "line",

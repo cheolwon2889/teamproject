@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>Panels - Kaiadmin Bootstrap 5 Admin Dashboard</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../../../resources/img/kaiadmin/favicon.ico" type="image/x-icon"/>
+	<link rel="icon" href="./resources/img/kaiadmin/favicon.ico" type="image/x-icon"/>
 
 	<!-- Fonts and icons -->
-	<script src="../../../resources/js/plugin/webfont/webfont.min.js"></script>
+	<script src="./resources/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
 			google: {"families":["Public Sans:300,400,500,600,700"]},
-			custom: {"families":["Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../../../resources/css/fonts.min.css']},
+			custom: {"families":["Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['./resources/css/fonts.min.css']},
 			active: function() {
 				sessionStorage.fonts = true;
 			}
@@ -21,12 +21,12 @@
 	</script>
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="../../../resources/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../../resources/css/plugins.min.css">
-	<link rel="stylesheet" href="../../../resources/css/kaiadmin.min.css">
+	<link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./resources/css/plugins.min.css">
+	<link rel="stylesheet" href="./resources/css/kaiadmin.min.css">
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="../../../resources/css/demo.css">
+	<link rel="stylesheet" href="./resources/css/demo.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -37,7 +37,7 @@
 				<div class="logo-header" data-background-color="dark">
 
 					<a href="../index.html" class="logo">
-						<img src="../../../resources/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20">
+						<img src="./resources/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20">
 					</a>
 					<div class="nav-toggle">
 						<button class="btn btn-toggle toggle-sidebar">
@@ -242,7 +242,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="../../../documentation/index.html">
+							<a href="./documentation/index.html">
 							  <i class="fas fa-file"></i>
 							  <p>Documentation</p>
 							  <span class="badge badge-secondary">1</span>
@@ -312,7 +312,7 @@
 					<div class="logo-header" data-background-color="dark">
 
 						<a href="../index.html" class="logo">
-							<img src="../../../resources/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20">
+							<img src="./resources/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20">
 						</a>
 						<div class="nav-toggle">
 							<button class="btn btn-toggle toggle-sidebar">
@@ -373,7 +373,7 @@
 											<div class="notif-center">
 												<a href="#">
 													<div class="notif-img"> 
-														<img src="../../../resources/img/jm_denis.jpg" alt="Img Profile">
+														<img src="./resources/img/jm_denis.jpg" alt="Img Profile">
 													</div>
 													<div class="notif-content">
 														<span class="subject">Jimmy Denis</span>
@@ -385,7 +385,7 @@
 												</a>
 												<a href="#">
 													<div class="notif-img"> 
-														<img src="../../../resources/img/chadengle.jpg" alt="Img Profile">
+														<img src="./resources/img/chadengle.jpg" alt="Img Profile">
 													</div>
 													<div class="notif-content">
 														<span class="subject">Chad</span>
@@ -397,7 +397,7 @@
 												</a>
 												<a href="#">
 													<div class="notif-img"> 
-														<img src="../../../resources/img/mlane.jpg" alt="Img Profile">
+														<img src="./resources/img/mlane.jpg" alt="Img Profile">
 													</div>
 													<div class="notif-content">
 														<span class="subject">Jhon Doe</span>
@@ -409,7 +409,7 @@
 												</a>
 												<a href="#">
 													<div class="notif-img"> 
-														<img src="../../../resources/img/talha.jpg" alt="Img Profile">
+														<img src="./resources/img/talha.jpg" alt="Img Profile">
 													</div>
 													<div class="notif-content">
 														<span class="subject">Talha</span>
@@ -459,7 +459,7 @@
 												</a>
 												<a href="#">
 													<div class="notif-img"> 
-														<img src="../../../resources/img/profile2.jpg" alt="Img Profile">
+														<img src="./resources/img/profile2.jpg" alt="Img Profile">
 													</div>
 													<div class="notif-content">
 														<span class="block">
@@ -554,7 +554,7 @@
 							<li class="nav-item topbar-user dropdown hidden-caret">
 								<a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
 									<div class="avatar-sm">
-										<img src="../../../resources/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+										<img src="./resources/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
 									</div>
 									<span class="profile-username">
 										<span class="op-7">Hi,</span> <span class="fw-bold">Hizrian</span>
@@ -564,7 +564,7 @@
 									<div class="dropdown-user-scroll scrollbar-outer">
 										<li>
 											<div class="user-box">
-												<div class="avatar-lg"><img src="../../../resources/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+												<div class="avatar-lg"><img src="./resources/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 												<div class="u-text">
 													<h4>Hizrian</h4>
 													<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
@@ -979,41 +979,41 @@
 		<!-- End Custom template -->
 	</div>
 	<!--   Core JS Files   -->
-<script src="../../../resources/js/core/jquery-3.7.1.min.js"></script>
+<script src="./resources/js/core/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	
 	<!-- jQuery Scrollbar -->
-	<script src="../../../resources/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="./resources/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 	<!-- Moment JS -->
-	<script src="../../../resources/js/plugin/moment/moment.min.js"></script>
+	<script src="./resources/js/plugin/moment/moment.min.js"></script>
 
 	<!-- Chart JS -->
-	<script src="../../../resources/js/plugin/chart.js/chart.min.js"></script>
+	<script src="./resources/js/plugin/chart.js/chart.min.js"></script>
 
 	<!-- jQuery Sparkline -->
-	<script src="../../../resources/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+	<script src="./resources/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
 
 	<!-- Chart Circle -->
-	<script src="../../../resources/js/plugin/chart-circle/circles.min.js"></script>
+	<script src="./resources/js/plugin/chart-circle/circles.min.js"></script>
 
 	<!-- Datatables -->
-	<script src="../../../resources/js/plugin/datatables/datatables.min.js"></script>
+	<script src="./resources/js/plugin/datatables/datatables.min.js"></script>
 
 	<!-- Bootstrap Notify -->
-	<script src="../../../resources/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<script src="./resources/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
 	<!-- jQuery Vector Maps -->
-	<script src="../../../resources/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-	<script src="../../../resources/js/plugin/jsvectormap/world.js"></script>
+	<script src="./resources/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+	<script src="./resources/js/plugin/jsvectormap/world.js"></script>
 
 	<!-- Sweet Alert -->
-	<script src="../../../resources/js/plugin/sweetalert/sweetalert.min.js"></script>
+	<script src="./resources/js/plugin/sweetalert/sweetalert.min.js"></script>
 
 	<!-- Kaiadmin JS -->
-	<script src="../../../resources/js/kaiadmin.min.js"></script>
+	<script src="./resources/js/kaiadmin.min.js"></script>
 
 	<!-- Kaiadmin DEMO methods, don't include it in your project! -->
-	<script src="../../../resources/js/setting-demo2.js"></script>
+	<script src="./resources/js/setting-demo2.js"></script>
 </body>
 </html>
