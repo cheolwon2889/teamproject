@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- 프로젝트 관련 스프링 설정의 정보(객체)를 가지고 있는 파일 -->
+	<!-- 웹 정보를 제외한 모든 정보를 가지고 있다. -->
+	
+	<!-- HikariCP 설정정보 객체 -->
+	<bean id="hikariConfig" 
+		  class="com.zaxxer.hikari.HikariConfig">
+		  <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		  <property name="jdbcUrl" value="jdbc:log4jdbc:mysql://localhost:3306/springdb" />
+		  <property name="username" value="root" />
+		  <property name="password" value="1234" />
+	</bean>
+	<!-- HikariCP 설정정보 객체 -->
+	
+	
+	
+	<!-- DataSource : DB연결정보를 저장하는 객체 -->
+	<bean id="dataSource" 
+		  class="com.zaxxer.hikari.HikariDataSource"
+		  destroy-method="close" > <!-- 너무 많은 요청이 왔을때 잠시 티켓을 만들었다가 다시 삭제하는 작업. -->
+		  <constructor-arg ref="hikariConfig" />
+	</bean>
+	
+<!-- 	<bean id="dataSource" -->
+<!-- 	 	  class="org.springframework.jdbc.datasource.DriverManagerDataSource" > -->
+	 	  
+<!-- 		  기존 설정 -->
+<!-- 		  <property name="driverClassName"  value="com.mysql.cj.jdbc.Driver" /> -->
+<!-- 	 	  <property name="url" value="jdbc:mysql://localhost:3306/springdb" /> -->
+<!-- 	 	  기존설정  --> 
+	 	  
+	 	  
+<!-- 	 	  <property name="driverClassName"  value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" /> -->
+<!-- 	 	  <property name="url" value="jdbc:log4jdbc:mysql://localhost:3306/springdb" /> -->
+<!-- 	 	  <property name="username" value="root" /> -->
+<!-- 	 	  <property name="password" value="1234" /> -->
+<!-- 	</bean> -->
+	
+	
+	
+	<!-- DataSource : DB연결정보를 저장하는 객체 -->
+	
+	<!-- SqlSessionFactory : connection생성( + 연결정보) , SQL 쿼리 실행  , Mybatis , 해당 객체 타입의 이름 소문자로 씀 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
+	
+		<!-- <property name="dataSource" value="" /> == setDataSource() -->
+		<property name="dataSource" ref="dataSource" />
+		
+		<!-- classpath:/ 는 src/main/resources 폴더를 의미한다. -->
+		<property name="configLocation" value="classpath:/mybatis-config.xml" />
+		<property name="mapperLocations" value="classpath:/mappers/**/*Mapper.xml" />		
+	
+	</bean>
+	<!-- SqlSessionFactory : connection생성( + 연결정보) , SQL 쿼리 실행 -->
+
+	<!-- SqlSession (SqlSessionTemplate) : (자동)connection생성( + 연결정보) , SQL 쿼리 실행  , Mybatis , 
+											자원해제(자동) -->
+	<bean id="sqlSession" 
+		class="org.mybatis.spring.SqlSessionTemplate" 
+		destroy-method="clearCache"
+		>
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	
+	<!-- SqlSession (SqlSessionTemplate) : connection생성( + 연결정보) , SQL 쿼리 실행  , Mybatis , 자원해제(자동) -->
+	
+	<context:property-placeholder location="classpath:/db-config/email.properties" />
+
+  
+
+	
+	<context:component-scan base-package="com.itwillbs.persistence" />
+	<context:component-scan base-package="com.itwillbs.service" />
+	
+	
+	
 		
 </beans>
