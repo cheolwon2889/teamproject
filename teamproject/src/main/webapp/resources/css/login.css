@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+* {
+    font-family: 'NanumSquare' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5F41E4;
+}
+#root {
+    width: 100%;
+    padding: 0 0.6rem;
+}
+
+.login-container {
+
+    max-width: 410px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .form-title {
+    text-align: center;
+    font-size: 1.37rem;
+    font-weight: 600;
+    margin-bottom: 1.87rem;
+}
+
+.login-container .social-login {
+    display: flex;
+    gap: 1.31rem;
+}
+
+.social-login .social-button {
+    display: flex;
+    width: 100%;
+    gap: 0.81rem;
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+    border-radius: 0.31rem;
+    justify-content: center;
+    padding: 0.75rem 0;
+    font-weight:  500;
+    background: #F9F8FF;
+    border: 1px solid #D5CBFF;
+    transition: 0.3s ease;
+
+}
+
+.social-login .social-button:hover {
+    background: #f1eff9;
+    border-color: #5F41E4;
+}
+
+.social-login .social-button .social-icon {
+    width: 23px;
+}
+
+.login-container .separator {
+    margin: 1.5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.login-container .separator span {
+    background: #fff;
+    padding: 0 0.9rem;
+    font-size: 1.06rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.login-container .separator::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #bfb3f2;
+}
+
+.login-form .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.login-form .input-wrapper .input-field {
+    height: 100%;
+    width: 100%;
+    padding: 0 1.25rem 0 1.25rem;
+    border: 1px solid #bfb3f2;
+    border-radius: 0.31rem;
+    outline: none;
+    font-size: 1.06rem;
+    transition: 0.2s ease;
+}
+
+.login-form .input-wrapper .input-field:focus {
+    border-radius: #5F41E4;
+}
+
+.login-form .input-wrapper .input-field::placeholder {
+    color: #a386e0;
+}
+
+.login-form .input-wrapper i {
+    color: #a395e0;
+    position: absolute;
+    top: 50%;
+    left: 0.9rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+
+.login-form .input-wrapper .input-field:focus  ~ i {
+    color: #5F41E4;
+}
+
+.login-form .forgot-pass-link {
+    display: block;
+    width: fit-content;
+    margin-top: -0.44rem;
+}
+
+.login-form .login-button {
+    width: 100%;
+    height: 54px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    background: #5F41E4;
+    margin-top: 2.19rem;
+    border-radius: 0.31rem;
+    transition: 0.2s ease;
+}
+
+.login-form .login-button:hover {
+    background: #4320df;
+
+}
+
+.login-container .signup-text {
+    text-align: center;
+    font-weight: 500;
+    margin: 1.75rem 0 0.31rem;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #5F41E4;
+    font-weight: 500;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
