@@ -22,6 +22,26 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<beans:bean id="naverClientID" class="java.lang.String">
+		<beans:constructor-arg value="네이버에서 발급받은 ID" />
+	</beans:bean>
+	<beans:bean id="naverClientSecret" class="java.lang.String">
+		<beans:constructor-arg value="네이버에서 발급받은 시크릿" />
+	</beans:bean>
+	<beans:bean id="naverRedirectUrl" class="java.lang.String">
+		<beans:constructor-arg value="http://localhost:8088/auth/naver/callback" />
+	</beans:bean>
+	
+	
+	<beans:bean id="naverSns" class="com.itwillbs.login.SnsValue">
+		<beans:constructor-arg value="naver" />
+		<beans:constructor-arg ref="naverClientID" />
+		<beans:constructor-arg ref="naverClientSecret" />
+		<beans:constructor-arg ref="naverRedirectUrl" />
+	</beans:bean>
+	
+	
+	
 	<context:component-scan base-package="com.itwillbs.web" />
 	
 	
