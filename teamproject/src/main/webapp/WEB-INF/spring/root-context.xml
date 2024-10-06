@@ -74,6 +74,28 @@
 	<!-- SqlSession (SqlSessionTemplate) : connection생성( + 연결정보) , SQL 쿼리 실행  , Mybatis , 자원해제(자동) -->
 	
 	
+	<!--  mail  -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+    <property name="host" value="smtp.gmail.com"/>
+    <property name="port" value="587"/>
+    <!-- 밑의 2개는 값을 숨김 -->
+    <property name="username" value=""/>
+    <property name="password" value=""/>
+
+    <property name="javaMailProperties">
+        <props>
+            <prop key="mail.transport.protocol">smtp</prop>
+            <prop key="mail.smtp.auth">true</prop>
+            <prop key="mail.smtp.starttls.enable">true</prop>
+            <prop key="mail.smtp.starttls.required">true</prop>
+            <prop key="mail.smtp.connectiontimeout">5000</prop>
+            <prop key="mail.smtp.timeout">5000</prop>
+            <prop key="mail.smtp.writetimeout">5000</prop>
+        </props>
+    </property>
+</bean>
+	
+	
 
   
 
