@@ -28,7 +28,10 @@ public interface MemberDAO {
 	
 	// 사용자 정보조회 (로그인 했다고 가정.);
 	// public MemberVO getMember(MemberVO vo);
-	public MemberVO getMember(String userid);
+	public MemberVO getMember(String member_id);
+	
+	// 사용자의 이메일이 있는지 없는지.
+	public MemberVO getMemberEmail(String email);
 	
 	// 사용자 정보수정
 	public int updateMember(MemberVO uvo);
@@ -39,5 +42,6 @@ public interface MemberDAO {
 	// 사용자 정보 목록 조회
 	public List<MemberVO> getMemberList();
 	
+	public MemberVO getMemberTel(String tel);
 	
 }

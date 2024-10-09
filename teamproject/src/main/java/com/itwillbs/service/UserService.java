@@ -1,9 +1,9 @@
 package com.itwillbs.service;
 
-import com.itwillbs.domain.UserVO;
+import com.itwillbs.domain.MemberVO;
 
 public interface UserService {
 
 	
-	public UserVO getBySns(UserVO user);
+	public MemberVO getBySns(String tell);
 }

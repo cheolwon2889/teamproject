@@ -51,16 +51,20 @@ public class MemberServiceImpl implements MemberService{
 //		MemberVO resultVO = mdao.loginMember(vo);
 //		return resultVO;
 		
-		
-		
 		 return mdao.loginMember(vo);
 	}
 	
 	
 	@Override
-	public MemberVO memberInfo(String userid) {
-		logger.debug("(●'◡'●) memberInfo(String userid) 실행 ");
-		return mdao.getMember(userid);
+	public MemberVO memberInfo(String member_id) {
+		logger.debug("(●'◡'●) memberInfo(String member_id) 실행 " + member_id);
+		return mdao.getMember(member_id);
+	}
+	
+	@Override
+	public MemberVO memberEmailSearch(String email) {
+		logger.debug("memberEmailSearch");
+		return mdao.getMemberEmail(email);
 	}
 	
 	@Override
@@ -86,6 +90,12 @@ public class MemberServiceImpl implements MemberService{
 		logger.debug("memberList() 실행 ");
 		
 		return mdao.getMemberList();
+	}
+	
+	@Override
+	public MemberVO memberInfoTel(String tel) {
+		logger.debug("(●'◡'●) memberInfoTel(String Tel) 실행 " + tel);
+		return mdao.getMemberTel(tel);
 	}
 	
 }

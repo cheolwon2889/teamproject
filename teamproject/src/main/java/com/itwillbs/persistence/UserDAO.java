@@ -1,7 +1,7 @@
 package com.itwillbs.persistence;
 
-import com.itwillbs.domain.UserVO;
+import com.itwillbs.domain.MemberVO;
 
 public interface UserDAO {
-	public UserVO getBySns(UserVO user);
+	public MemberVO getBySns(String tell);
 }

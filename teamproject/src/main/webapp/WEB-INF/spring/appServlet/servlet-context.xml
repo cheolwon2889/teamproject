@@ -23,13 +23,13 @@
 	</beans:bean>
 	
 	<beans:bean id="naverClientID" class="java.lang.String">
-		<beans:constructor-arg value="네이버에서 발급받은 ID" />
+		<beans:constructor-arg value="" />
 	</beans:bean>
 	<beans:bean id="naverClientSecret" class="java.lang.String">
-		<beans:constructor-arg value="네이버에서 발급받은 시크릿" />
+		<beans:constructor-arg value="" />
 	</beans:bean>
 	<beans:bean id="naverRedirectUrl" class="java.lang.String">
-		<beans:constructor-arg value="http://localhost:8088/auth/naver/callback" />
+		<beans:constructor-arg value="" />
 	</beans:bean>
 	
 	

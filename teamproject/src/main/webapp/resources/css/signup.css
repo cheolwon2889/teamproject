@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+* {
+    font-family: 'NanumSquare' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f5f7fd;
+}
+#root {
+    width: 100%;
+    padding: 0 0.6rem;
+}
+
+.signup-container {
+
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container .form-title {
+    text-align: center;
+    font-size: 1.67rem;
+    font-weight: 600;
+    margin-bottom: 1.87rem;
+}
+
+
+.signup-container .separator {
+    margin: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+}
+
+.signup-container .separator span {
+    background: #fff;
+    padding: 0 0.9rem;
+    font-size: 1.06rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.signup-container .separator::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #bfb3f2;
+}
+
+.signup-form .input-wrapper {
+    height: 54px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+
+.signup-form .input-wrapper .input-label {
+    font-weight: 600;
+    font-size: 1.0rem;
+    display: block;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+
+.signup-form .input-wrapper .input-field {
+    height: 80%;
+    width: 100%;
+    padding: 0 1.25rem 0 1.25rem;
+    border: 1px solid #bfb3f2;
+    border-radius: 0.31rem;
+    outline: none;
+    font-size: 1.06rem;
+    transition: 0.2s ease;
+}
+
+.signup-form .input-wrapper .input-field:focus {
+    border-radius: #5F41E4;
+}
+
+.signup-form .input-wrapper .input-field::placeholder {
+    color: #a386e0;
+}
+
+
+.input-wrapper #username::placeholder {
+    font-size: 0.72rem; /* 폰트 크기 조정 */
+
+}
+
+.signup-form .input-wrapper i {
+    color: #a395e0;
+    position: absolute;
+    top: 50%;
+    left: 0.9rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+
+.signup-form .input-wrapper .input-field:focus  ~ i {
+    color: #5F41E4;
+}
+
+.signup-form .forgot-pass-link {
+    display: block;
+    width: fit-content;
+    margin-top: -0.44rem;
+}
+
+.signup-form .signup-button {
+    width: 100%;
+    height: 54px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.125rem;
+    background: #5F41E4;
+    margin-top: 2.19rem;
+    border-radius: 0.31rem;
+    transition: 0.2s ease;
+}
+
+.signup-form .signup-button:hover {
+    background: #4320df;
+
+}
+
+.signup-container .signup-text {
+    text-align: center;
+    font-weight: 500;
+    margin: 1.75rem 0 0.31rem;
+}
+
+.signup-container a {
+    text-decoration: none;
+    color: #5F41E4;
+    font-weight: 500;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+.send-verification-button {
+    position: absolute;
+    top: 2.05rem;
+    right: 0.4rem;
+    width: 100px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: #5F41E4;
+    border-radius: 0.31rem;
+    line-height: 16px;
+}
+
+.auth {
+   top: 2.25rem;
+}
+
+.password-message {
+	    position: absolute;
+    top: 0.37rem;
+    left: 6.4rem;
+    font-size: 0.67rem;
+}
+
+.signup-form .signup-button:disabled {
+    background: #d3d3d3; /* 비활성화 상태의 배경색 */
+    cursor: not-allowed; /* 비활성화 상태의 커서 스타일 */
+    color: #a0a0a0; /* 비활성화 상태의 텍스트 색상 */
+}
+
+.signup-form .signup-button:hover:disabled {
+    background: #d3d3d3; /* 비활성화 상태에서 호버 시 배경색 */
+}
+
+.send-verification-button:disabled {
+    background: #d3d3d3; /* 비활성화 상태의 배경색 */
+    cursor: not-allowed; /* 비활성화 상태의 커서 스타일 */
+    color: #a0a0a0; /* 비활성화 상태의 텍스트 색상 */
+}
+input:disabled {
+    background-color: #d3d3d3 !important;  /* 비활성화된 입력 필드 색상 */
+    color: #a9a9a9 !important; /* 비활성화된 텍스트 색상 */
+    cursor: not-allowed; /* 커서를 금지 아이콘으로 변경 */
+}
+
+
+.spinner-container {
+    position: fixed; /* 화면 전체에 고정 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 전체 높이 */
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경색 */
+    z-index: 9998; /* 스피너보다 아래에 표시 */
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* 배경색 */
+    border-left-color: #3498db; /* 스피너 색상 */
+    border-radius: 50%;
+    width: 40px; /* 스피너 크기 */
+    height: 40px; /* 스피너 크기 */
+    animation: spin 1s linear infinite; /* 회전 애니메이션 */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.send-userId-button {
+   position: absolute;
+    top: 2.05rem;
+    right: 0.4rem;
+    width: 100px;
+    height: 32px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: #5F41E4;
+    border-radius: 0.31rem;
+    line-height: 16px;
+}
+.send-userId-button:disabled {
+    cursor: not-allowed;
+    background:#d3d3d3;
+}
+

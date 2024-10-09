@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 
+import com.itwillbs.domain.MemberVO;
 import com.itwillbs.domain.UserVO;
 import com.itwillbs.persistence.UserDAO;
 
@@ -16,7 +17,7 @@ public class UserServiceImpl implements UserService {
 	
 	
 	@Override
-	public UserVO getBySns(UserVO user) {
-		return dao.getBySns(user);
+	public MemberVO getBySns(String tell) {
+		return dao.getBySns(tell);
 	}
 }
