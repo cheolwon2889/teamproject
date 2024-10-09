@@ -16,7 +16,10 @@ public interface MemberService {
 	public MemberVO memberLoginCheck(MemberVO vo);
 	
 	// 회원정보 조회
-	public MemberVO memberInfo(String userid);
+	public MemberVO memberInfo(String member_id);
+	
+	// 회원정보 조회 
+	public MemberVO memberEmailSearch(String email);
 	
 	// 회원정보 수정
 	public int memberUpdate(MemberVO vo);
@@ -26,4 +29,7 @@ public interface MemberService {
 	
 	// 회원정보 목록
 	public List<MemberVO> memberList();
+	
+	// 회원정보 전화번호 조회
+	public MemberVO memberInfoTel(String tel);
 }

@@ -30,12 +30,23 @@ public class MemberVO {
 	// private String uId; // getUId() x
 	// private String userId; // getUserId() o 웬만하면 x
 	
-	private String userid;
-	private String userpw;
-	private String username;
-	private String useremail;
-	private Timestamp regdate;
-	private Timestamp updatedate;
+	private String member_id;
+	private String member_pw;
+	private String member_name;
+	private String member_email;
+	private String member_tel;
+	// 
+	private String member_birth;
+	// 
+	private String department_id;
+	private String employee_rank;
+	private Timestamp create_date;
+	private Timestamp update_date;
+	private String permission_id;
+	private String member_state;
+	private String is_company;
+	private String approval_status;
+	
 	
 	
 }

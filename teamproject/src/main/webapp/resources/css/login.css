@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #5F41E4;
+    background: #f5f7fd;
 }
 #root {
     width: 100%;
@@ -24,7 +24,7 @@ body {
 
 .login-container {
 
-    max-width: 410px;
+   	width: 410px;
     margin: 0 auto;
     border-radius: 0.5rem;
     padding: 2rem 1.5rem;
@@ -34,7 +34,7 @@ body {
 
 .login-container .form-title {
     text-align: center;
-    font-size: 1.37rem;
+    font-size: 2.20rem;
     font-weight: 600;
     margin-bottom: 1.87rem;
 }
@@ -51,12 +51,12 @@ body {
     cursor: pointer;
     font-size: 1rem;
     align-items: center;
-    border-radius: 0.31rem;
+    
     justify-content: center;
-    padding: 0.75rem 0;
+    /* padding: 0.75rem 0; */
     font-weight:  500;
     background: #F9F8FF;
-    border: 1px solid #D5CBFF;
+    border: none;
     transition: 0.3s ease;
 
 }
@@ -67,7 +67,12 @@ body {
 }
 
 .social-login .social-button .social-icon {
-    width: 23px;
+    width: 100%;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 0.31rem;
+    
+     
 }
 
 .login-container .separator {
@@ -101,6 +106,7 @@ body {
     position: relative;
     margin-bottom: 1.5rem;
 }
+
 
 .login-form .input-wrapper .input-field {
     height: 100%;
@@ -177,3 +183,5 @@ body {
 .login-container a:hover {
     text-decoration: underline;
 }
+
+

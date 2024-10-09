@@ -23,11 +23,11 @@
 <!--  		where userid=#{userid} and userpw=#{userpw} -->
 <!--  	</select> -->
  	
- 	<!-- 회원정보 조회 -->
-<!--  	<select id="getMember" resultType="MemberVO"> -->
-<!--  		select * from tbl_member -->
-<!--  		where userid=#{userid} -->
-<!--  	</select> -->
+  	<!-- 회원정보 조회 -->
+ 	<select id="getMemberTel" resultType="MemberVO">
+ 		select * from member
+ 		where member_tell=#{tell}
+ 	</select>
  	
  	<!-- 회원정보 수정 -->
 <!--  	<update id="updateMember" > -->

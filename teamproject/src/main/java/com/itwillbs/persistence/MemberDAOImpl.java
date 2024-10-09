@@ -113,7 +113,7 @@ public class MemberDAOImpl implements MemberDAO{
 	
 	@Override
 //	public MemberVO getMember(MemberVO vo) {
-	public MemberVO getMember(String userid) {
+	public MemberVO getMember(String member_id) {
 		System.out.println(" DAO : getMember(String userid) ");
 		
 		// SQL 구문을 mapper에 생성
@@ -122,7 +122,15 @@ public class MemberDAOImpl implements MemberDAO{
 		// System.out.println(" DAO : "+resultVO);
 		
 		// return resultVO;
-		return sqlSession.selectOne(NAMESPACE+".getMember", userid);
+		return sqlSession.selectOne(NAMESPACE+".getMember", member_id);
+	}
+	
+	@Override
+	public MemberVO getMemberEmail(String email) {
+		System.out.println(" DAO : getMemberEmail(String email) ");
+		
+		return sqlSession.selectOne(NAMESPACE+".getMemberEmail", email);
+
 	}
 	
 	@Override
@@ -148,5 +156,11 @@ public class MemberDAOImpl implements MemberDAO{
 		System.out.println(" DAO : getMemberList() ");	
 		
 		return sqlSession.selectList(NAMESPACE+".getMemberList");
+	}
+	
+	@Override
+	public MemberVO getMemberTel(String tel) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne(NAMESPACE+".getMemberTel");
 	}
 }

@@ -36,10 +36,10 @@ public class MeberDAOTest {
 		System.out.println(" TEST : 회원가입테스트() 시작");
 		MemberVO vo = new MemberVO();
 		
-		vo.setUserid("itwill5");
-		vo.setUsername("학생5");
-		vo.setUserpw("12345");
-		vo.setUseremail("학생5@itwill.com");
+		//vo.setUserid("itwill5");
+		//vo.setUsername("학생5");
+		//vo.setUserpw("12345");
+		//vo.setUseremail("학생5@itwill.com");
 		
 		// mdao.insertMember(vo);
 		
@@ -97,9 +97,9 @@ public class MeberDAOTest {
 	public void 회원정보수정() {
 		System.out.println(" TEST : 회원정보수정 시작");
 		MemberVO uvo = new MemberVO();
-		uvo.setUserid("itwill5");
-		uvo.setUserpw("12345");
-		uvo.setUseremail("itwill5@naver.com");
+		//uvo.setUserid("itwill5");
+		//uvo.setUserpw("12345");
+		//uvo.setUseremail("itwill5@naver.com");
 		
 		int result = mdao.updateMember(uvo);
 		
@@ -119,8 +119,8 @@ public class MeberDAOTest {
 		
 		System.out.println(" TEST : 회원정보 삭제 시작 ");
 		MemberVO dvo = new MemberVO();
-		dvo.setUserid("itwill3");
-		dvo.setUserpw("12345");
+		//dvo.setUserid("itwill3");
+		//dvo.setUserpw("12345");
 		int result = mdao.deleteMember(dvo);
 		
 		if(result == 1) {
