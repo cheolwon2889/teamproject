@@ -3,6 +3,7 @@ package com.itwillbs.web;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.crypto.SecretKey;
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
@@ -10,13 +11,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.itwillbs.domain.MemberVO;
+import com.itwillbs.pass.EncryptionUtil;
 import com.itwillbs.service.MemberService;
 
 @Controller
@@ -24,6 +24,16 @@ public class SignupController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(SignupController.class);
 	
+	private static SecretKey secretKey;
+	
+	static {
+        try {
+            secretKey = EncryptionUtil.generateKey(); // 비밀 키 생성
+        } catch (Exception e) {
+            e.printStackTrace(); // 예외 처리
+            // 예외 발생 시 로그를 남기거나 기본 키를 설정하는 등의 추가 조치를 취할 수 있습니다.
+        }
+    }
 	
 	@Inject
 	private MemberService service;
@@ -43,6 +53,15 @@ public class SignupController {
 		if(vo2 != null) {
 			return "redirect:/signup"; // 중복된 전화번호
 		}
+		
+		try {
+			String encryptedInput = EncryptionUtil.encrypt(vo.getMember_pw(), secretKey);
+			vo.setMember_pw(encryptedInput); // 암호화된 비밀번호를 설정	
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		// 회원가입 실행.
 		service.memberJoin(vo);
 		
